@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: hello
         id: hello
-        uses: csperando/test
+        uses: csperando/test@v1
         with:
           who-to-greet: "coleman"
       - name: output
