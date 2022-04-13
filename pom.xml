@@ -60,9 +60,11 @@
   </build>
   
   <dependencies>
-    <groupId>com.github.cflint</groupId>
-    <artifactId>CFLint</artifactId>
-    <version>LATEST</version>
+    <dependency>
+      <groupId>com.github.cflint</groupId>
+      <artifactId>CFLint</artifactId>
+      <version>1.5.0</version>
+    </dependency>
   </dependencies>
   
 </project>
