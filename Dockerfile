@@ -1,3 +1,7 @@
 FROM alpine:3.10
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+
+COPY src /src
+COPY target /target
+COPY pom.xml /
+
+CMD ["mvn install -DskipTests"]
