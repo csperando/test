@@ -24,15 +24,10 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    # - name: Build with Maven
-    #   run: mvn -B package --file pom.xml
-
     - name: Maven Install CFLint
       run: mvn install -DskipTests
 
     - name: Run CFLint jar
       run: |
-        dir
         cd target
-        dir
-        java -jar github-action-maven-tutorial-1.0-SNAPSHOT.jar -help
+        java -jar CFLint-1.5.0-all.jar -help
