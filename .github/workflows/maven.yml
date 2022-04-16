@@ -32,5 +32,6 @@ jobs:
 
     - name: Run CFLint jar
       run: |
+        dir
         cd target
-        java -jar CFLint-1.5.0-all.jar -folder "/components"
+        java -jar CFLint-1.5.0-all.jar -help
