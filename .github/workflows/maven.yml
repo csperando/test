@@ -35,4 +35,4 @@ jobs:
         dir
         cd target
         dir
-        java -jar CFLint-1.5.0-all.jar -help
+        java -jar github-action-maven-tutorial-1.0-SNAPSHOT.jar -help
