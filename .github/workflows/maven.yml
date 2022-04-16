@@ -27,7 +27,7 @@ jobs:
     #   run: mvn -B package --file pom.xml
 
     - name: Maven Install
-      run: mvn clean install
+      run: mvn install -DskipTests
 
     - name: Run CFLint jar
-      run: java -jar CFLint-1.5.0-all.jar -x
+      run: java -jar CFLint-1.5.0-all.jar -folder target
