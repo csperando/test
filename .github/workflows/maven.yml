@@ -32,14 +32,14 @@ jobs:
         cd target
         java -jar CFLint-1.5.0-all.jar -folder $GITHUB_WORKSPACE
 
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v3
-      with:
-        server_address: smtp.gmail.com
-        server_port: 465
-        username: ${{secrets.username}}
-        password: ${{secrets.password}}
-        subject: CFLint Report Attached
-        to: csperando@gmail.com
-        from: csperando@gmail.com
-        html_body: file://target/cflint-result.html
+    # - name: Send mail
+    #   uses: dawidd6/action-send-mail@v3
+    #   with:
+    #     server_address: smtp.gmail.com
+    #     server_port: 465
+    #     username: ${{secrets.username}}
+    #     password: ${{secrets.password}}
+    #     subject: CFLint Report Attached
+    #     to: csperando@gmail.com
+    #     from: csperando@gmail.com
+    #     html_body: file://target/cflint-result.html
