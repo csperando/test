@@ -37,8 +37,8 @@ jobs:
       with:
         server_address: smtp.gmail.com
         server_port: 465
-        username: ${{secrets.MAIL_USERNAME}}
-        password: ${{secrets.MAIL_PASSWORD}}
+        username: ${{secrets.username}}
+        password: ${{secrets.password}}
         subject: CFLint Report Attached
         to: csperando@gmail.com
         from: csperando@gmail.com
