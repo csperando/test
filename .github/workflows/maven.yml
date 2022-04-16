@@ -37,8 +37,9 @@ jobs:
       with:
         server_address: smtp.gmail.com
         server_port: 465
+        username: ${{secrets.MAIL_USERNAME}}
+        password: ${{secrets.MAIL_PASSWORD}}
         subject: CFLint Report Attached
         to: csperando@gmail.com
         from: csperando@gmail.com
         html_body: file://target/cflint-result.html
-        
