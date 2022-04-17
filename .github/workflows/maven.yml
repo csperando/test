@@ -25,9 +25,7 @@ jobs:
 
     - name: Verify Output
       run: |
-        while read line; do
-          echo "$line"
-        done < ${{ steps.lint.outputs.results }}
+        echo ${{ steps.lint.outputs.results }}
 
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
