@@ -25,7 +25,8 @@ jobs:
 
     - name: Verify Output
       run: |
-        echo ${{ steps.lint.outputs.results//$'\n'/'%0A' }}
+        test = ${{ steps.lint.outputs.results }}//$'\n'/'%0A'
+        echo "$test"
 
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
