@@ -22,7 +22,7 @@ jobs:
     - name: CFLint
       uses: csperando/cflint-action@V0.22
       with:
-        folder-to-lint: $workspace
+        folder-to-lint: $env.workspace
 
     # - name: Send mail
     #   uses: dawidd6/action-send-mail@v3
