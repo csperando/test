@@ -15,13 +15,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      run: |
-        echo "::set-output name=workspace::$GITHUB_WORKSPACE"
+    - uses: actions/checkout@v3
+      env:
+        workspace: $GITHUB_WORKSPACE
 
     - name: Echo Env
-      run: echo ${{ steps.Checkout.output.workspace }}
+      run: echo $workspace
 
     - name: CFLint
       uses: csperando/cflint-action@V0.22
