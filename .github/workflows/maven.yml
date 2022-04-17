@@ -17,6 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Sanity Check
+      runs: echo $GITHUB_WORKSPACE
+
     - name: CFLint
       uses: csperando/cflint-action@V0.7
       with:
