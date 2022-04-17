@@ -19,7 +19,7 @@ jobs:
 
     - name: Echo Env
       run: |
-        echo "workspace=$GITHUB_WORKSPACE"
+        echo ::set-env name=workspace::$GITHUB_WORKSPACE
         echo ${{ env.workspace }}
 
     - name: CFLint
