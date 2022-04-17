@@ -19,14 +19,13 @@ jobs:
 
     - name: Lint Codebase
       id: lint
-      uses: csperando/cflint-action@V0.30
+      uses: csperando/cflint-action@V0.31
       with:
         folder-to-lint: .
 
     - name: Verify Output
       run: |
         results=${{ steps.lint.outputs.results }}
-        results=${results//$'\n'/'%0A'}
         echo "$results"
 
     - name: Send mail
