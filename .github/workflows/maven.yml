@@ -19,9 +19,8 @@ jobs:
 
     - name: Echo Env
       run: |
-        echo ${{ env }}
-        echo $GITHUB_WORKSPACE
-        echo $GITHUB_ENV
+        echo "workspace=$GITHUB_WORKSPACE"
+        echo ${{ env.workspace }}
 
     - name: CFLint
       uses: csperando/cflint-action@V0.22
