@@ -16,11 +16,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      env:
+        workspace: "$GITHUB_WORKSPACE"
 
     - name: CFLint
       uses: csperando/cflint-action@V0.22
       with:
-        folder-to-lint: $GITHUB_WORKSPACE
+        folder-to-lint: $workspace
 
     # - name: Send mail
     #   uses: dawidd6/action-send-mail@v3
