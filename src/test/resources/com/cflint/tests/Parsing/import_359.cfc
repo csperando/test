@@ -1,1 +1,0 @@
-<cfset import(Event, local.uploadPathBild&file.serverfile)>

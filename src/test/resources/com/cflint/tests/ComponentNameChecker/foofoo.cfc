@@ -1,2 +1,0 @@
-component name="foo2"{
-}

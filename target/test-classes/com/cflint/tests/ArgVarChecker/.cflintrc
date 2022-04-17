@@ -1,8 +1,0 @@
-{
-  "includes" : [ {
-    "code" : "ARG_VAR_MIXED"
-  },{
-    "code" : "ARG_VAR_CONFLICT"
-  } ],
-  "inheritParent" : false
-}

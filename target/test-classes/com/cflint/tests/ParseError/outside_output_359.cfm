@@ -1,1 +1,0 @@
-<div style="background-color:#8d9bdc;"><cfoutput>#foo#</cfoutput></div>

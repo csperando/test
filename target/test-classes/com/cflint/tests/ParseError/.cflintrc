@@ -1,8 +1,0 @@
-{
-  "rule" : [ ],
-  "excludes" : [ ],
-  "includes" : [ {
-    "code" : "PARSE_ERROR"
-  } ],
-  "inheritParent" : false
-}

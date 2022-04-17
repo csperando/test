@@ -1,8 +1,0 @@
-{
-  "rule" : [ ],
-  "excludes" : [ ],
-  "includes" : [ {
-    "code" : "METHOD_TOO_LONG"
-  } ],
-  "inheritParent" : false
-}

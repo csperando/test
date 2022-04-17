@@ -24,13 +24,10 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Maven Install CFLint
-      run: mvn install -DskipTests
-
-    - name: Run CFLint jar
+    - name: CFLint
+      uses: csperando/cflint-action
       run: |
-        cd target
-        java -jar CFLint-1.5.0-all.jar -folder $GITHUB_WORKSPACE
+        java -jar target/CFLint-1.5.0-all.jar -folder "$GITHUB_WORKSPACE"
 
     # - name: Send mail
     #   uses: dawidd6/action-send-mail@v3

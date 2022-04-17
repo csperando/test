@@ -1,8 +1,0 @@
-{
-  "includes" : [ {
-    "code" : "PACKAGE_CASE_MISMATCH",
-    "messageText" : null,
-    "severity" : null
-  } ],
-  "inheritParent" : false
-}
