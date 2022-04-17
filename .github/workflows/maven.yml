@@ -25,7 +25,7 @@ jobs:
 
     - name: Verify Output
       run: |
-        echo ${{ steps.lint.outputs.results }}
+        echo ${{ steps.lint.outputs.results//$'\n'/'%0A' }}
 
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
