@@ -23,7 +23,7 @@ jobs:
     - name: CFLint
       uses: csperando/cflint-action@V0.19
       with:
-        folder-to-lint: "$GITHUB_WORKSPACE"
+        folder-to-lint: $GITHUB_WORKSPACE
 
     # - name: Send mail
     #   uses: dawidd6/action-send-mail@v3
