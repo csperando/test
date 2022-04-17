@@ -19,14 +19,13 @@ jobs:
 
     - name: Lint Codebase
       id: lint
-      uses: csperando/cflint-action@V0.31
+      uses: csperando/cflint-action@V0.32
       with:
         folder-to-lint: .
 
     - name: Verify Output
       run: |
-        results=${{ steps.lint.outputs.results }}
-        echo "$results"
+        echo "${{ steps.lint.outputs.results }}"
 
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
