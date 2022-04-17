@@ -17,11 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Sanity Check
-      run: echo $GITHUB_WORKSPACE
-
     - name: CFLint
-      uses: csperando/cflint-action@V0.19
+      uses: csperando/cflint-action@V0.20
       with:
         folder-to-lint: $GITHUB_WORKSPACE
 
