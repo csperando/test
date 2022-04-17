@@ -21,7 +21,7 @@ jobs:
       run: echo $GITHUB_WORKSPACE
 
     - name: CFLint
-      uses: csperando/cflint-action@V0.18
+      uses: csperando/cflint-action@V0.19
       with:
         folder-to-lint: "$GITHUB_WORKSPACE"
 
