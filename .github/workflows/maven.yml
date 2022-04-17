@@ -19,13 +19,9 @@ jobs:
 
     - name: Lint Codebase
       id: lint
-      uses: csperando/cflint-action@V0.32
+      uses: csperando/cflint-action@v1.0.0
       with:
         folder-to-lint: .
-
-    - name: Verify Output
-      run: |
-        echo "${{ steps.lint.outputs.results }}"
 
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
