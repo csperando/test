@@ -23,6 +23,12 @@ jobs:
       with:
         folder-to-lint: .
 
+    - name: Verify Output
+      run: |
+        while read line; do
+          echo "$line"
+        done < ${{ steps.lint.outputs.results }}
+
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
       with:
