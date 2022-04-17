@@ -10,8 +10,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
 
+  CFLint:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,22 +19,18 @@ jobs:
 
     - name: Lint Codebase
       id: lint
-      uses: csperando/cflint-action@V0.26
+      uses: csperando/cflint-action@V0.27
       with:
         folder-to-lint: .
 
-    - name: Verify Output
-      run: |
-        echo ${{ steps.lint.outputs.results }}
-
-    # - name: Send mail
-    #   uses: dawidd6/action-send-mail@v3
-    #   with:
-    #     server_address: smtp.gmail.com
-    #     server_port: 465
-    #     username: ${{secrets.username}}
-    #     password: ${{secrets.password}}
-    #     subject: CFLint Report Attached
-    #     to: csperando@gmail.com
-    #     from: csperando@gmail.com
-    #     html_body: ${{ steps.lint.outputs.results }}
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{secrets.username}}
+        password: ${{secrets.password}}
+        subject: CFLint Report Attached
+        to: csperando@gmail.com
+        from: csperando@gmail.com
+        html_body: ${{ steps.lint.outputs.results }}
