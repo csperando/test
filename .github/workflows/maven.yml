@@ -33,4 +33,4 @@ jobs:
         subject: CFLint Report Attached
         to: csperando@gmail.com
         from: csperando@gmail.com
-        html_body: ${{ steps.lint.outputs.results }}
+        html_body: "${{ steps.lint.outputs.results }}"
