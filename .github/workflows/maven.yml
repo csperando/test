@@ -17,10 +17,16 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Echo Env
+      run: |
+        echo ${{ env }}
+        echo $GITHUB_WORKSPACE
+        echo $GITHUB_ENV
+
     - name: CFLint
       uses: csperando/cflint-action@V0.22
       with:
-        folder-to-lint: ${{ GITHUB_WORKSPACE }}
+        folder-to-lint: ${{ env.GITHUB_WORKSPACE }}
 
     # - name: Send mail
     #   uses: dawidd6/action-send-mail@v3
