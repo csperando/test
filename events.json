@@ -1,11 +1,11 @@
 {
   "events": [
     {
-      "id': 101,
-      "title': "Climb Stuff",
-      "date': "01/01/2023",
-      "time': "10:00AM EST",
-      "description': "Climbing up rocks and stuff for fun."
+      "id": 101,
+      "title": "Climb Stuff",
+      "date": "01/01/2023",
+      "time": "10:00AM EST",
+      "description": "Climbing up rocks and stuff for fun."
     },
     {
       "id": 102,
