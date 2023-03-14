@@ -1,25 +1,25 @@
 {
   "events": [
     {
-      id: 101,
-      title: "Climb Stuff",
-      date: "01/01/2023",
-      time: "10:00AM EST",
-      description: "Climbing up rocks and stuff for fun."
+      "id': 101,
+      "title': "Climb Stuff",
+      "date': "01/01/2023",
+      "time': "10:00AM EST",
+      "description': "Climbing up rocks and stuff for fun."
     },
     {
-      id: 102,
-      title: "Reading",
-      date: "03/15/2023",
-      time: "12:00PM MST",
-      description: "Read a book."
+      "id": 102,
+      "title": "Reading",
+      "date": "03/15/2023",
+      "time": "12:00PM MST",
+      "description": "Read a book."
     },
     {
-      id: 103,
-      title: "Interview",
-      date: "04/02/2023",
-      time: "1:00PM MST",
-      description: "A job interview"
+      "id": 103,
+      "title": "Interview",
+      "date": "04/02/2023",
+      "time": "1:00PM MST",
+      "description": "A job interview"
     }
   ]
 }
